@@ -1,0 +1,100 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:azure
+}    
+    
+img {
+    width: 97vw;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+article {
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+nav {
+    padding-bottom: 5rem;
+}
+
+nav a {
+    margin-left: 3rem;
+    text-decoration: none;
+    color:aquamarine;
+}
+
+nav a:hover {
+    color: whitesmoke;
+}
+
+h1 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+p {
+    margin-bottom: 5rem;
+}
+/*
+#dawn {
+    background-image: url('../images/Dawn-of-the-Dead-Remake.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+#hills {
+    background-image: url('../images/4901_5.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+#evildead {
+    background-image: url('../images/evildead.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+#texas {
+    background-image: url('../images/texas2.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+background-image {
+    background-size: 100vw;
+}
+*/
+.grid-container > div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+
+  .grid-container {
+    display: grid;
+    .hills { grid-area: header; }
+    .evildead { grid-area: right; }
+    .texas { grid-area: left; }
+    .dawn { grid-area: bottom; }
+  }
+  
+
+  .grid-container > div {
+    display: grid;
+    grid-template-areas:
+      'hills hills hills hills hills hills'
+      'texas texas texas evildead evildead evildead'
+      'dawn dawn dawn dawn dawn dawn'
+  
+  }
